@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>TestPro</display-name>
-  
   <servlet>
-  	<servlet-name>MyFirstServlet</servlet-name>
-  	<servlet-class>com.yuanwill.servlet.MyFirstServlet</servlet-class>
-  	<init-param>
-  		<param-name>url</param-name>
-  		<param-value>jdbc://haha//lala</param-value>
-  	</init-param>
+    <servlet-name>MyFirstServlet</servlet-name>
+    <servlet-class>com.yuanwill.servlet.MyFirstServlet</servlet-class>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>jdbc://haha//lala</param-value>
+    </init-param>
+    <load-on-startup>3</load-on-startup>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>MyFirstServlet</servlet-name>
-  	<!-- http协议访问时资源的虚拟路径 -->
-  	<url-pattern>/abc</url-pattern>
+    <servlet-name>MyFirstServlet</servlet-name>
+    <url-pattern>/abc</url-pattern>
   </servlet-mapping>
-  
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -24,4 +22,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>QuickStartServlet2</display-name>
+    <servlet-name>QuickStartServlet2</servlet-name>
+    <servlet-class>com.yuanwill.servlet.QuickStartServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuickStartServlet2</servlet-name>
+    <url-pattern>/quickStartServlet2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServlet</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.yuanwill.login.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

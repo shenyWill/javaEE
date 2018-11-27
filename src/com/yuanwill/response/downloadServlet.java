@@ -59,6 +59,7 @@ public class downloadServlet extends HttpServlet {
 		// 要下载的文件类型
 		response.setContentType(this.getServletContext().getMimeType(filename));
 		
+		
 		// 告诉服务器不解析，直接下载
 		response.setHeader("Content-Disposition", "attachment;filename=" + filenameEncoder);
 		

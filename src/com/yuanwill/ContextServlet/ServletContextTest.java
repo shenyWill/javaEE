@@ -44,11 +44,13 @@ public class ServletContextTest extends HttpServlet {
 		
 		// 获取不到d.txt
 		
-		// 在读取src(classes)下的资源是可以同类加载器--专门加载classes下的文件
+		// 第二种方式： 在读取src(classes)下的资源是可以同类加载器--专门加载classes下的文件
 		// 地址相当于classes
 		String path = ServletContextTest.class.getClassLoader().getResource("c.txt").getPath();
 		System.out.println(path);
 		
+		// 域对象 ---给servletContext 存数据
+		context.setAttribute("name", "will");
 		
 	}
 

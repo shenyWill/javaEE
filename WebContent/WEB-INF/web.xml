@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>TestPro</display-name>
-  
   <context-param>
-  	<param-name>name</param-name>
-  	<param-value>shenyuan</param-value>
+    <param-name>name</param-name>
+    <param-value>shenyuan</param-value>
   </context-param>
-  
   <servlet>
     <servlet-name>MyFirstServlet</servlet-name>
     <servlet-class>com.yuanwill.servlet.MyFirstServlet</servlet-class>
@@ -67,5 +65,95 @@
   <servlet-mapping>
     <servlet-name>ServletContextTest</servlet-name>
     <url-pattern>/servletContextTest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletContextTest2</display-name>
+    <servlet-name>ServletContextTest2</servlet-name>
+    <servlet-class>com.yuanwill.ContextServlet.ServletContextTest2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletContextTest2</servlet-name>
+    <url-pattern>/servletContextTest2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletContextTest3</display-name>
+    <servlet-name>ServletContextTest3</servlet-name>
+    <servlet-class>com.yuanwill.ContextServlet.ServletContextTest3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletContextTest3</servlet-name>
+    <url-pattern>/servletContextTest3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServletContextTest6</display-name>
+    <servlet-name>ServletContextTest6</servlet-name>
+    <servlet-class>com.yuanwill.ContextServlet.ServletContextTest6</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletContextTest6</servlet-name>
+    <url-pattern>/servletContextTest6</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseTest1</display-name>
+    <servlet-name>ResponseTest1</servlet-name>
+    <servlet-class>com.yuanwill.response.ResponseTest1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseTest1</servlet-name>
+    <url-pattern>/responseTest1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseTest2</display-name>
+    <servlet-name>ResponseTest2</servlet-name>
+    <servlet-class>com.yuanwill.response.ResponseTest2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseTest2</servlet-name>
+    <url-pattern>/ResponseTest2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseTest3</display-name>
+    <servlet-name>ResponseTest3</servlet-name>
+    <servlet-class>com.yuanwill.response.ResponseTest3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseTest3</servlet-name>
+    <url-pattern>/ResponseTest3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseTest4</display-name>
+    <servlet-name>ResponseTest4</servlet-name>
+    <servlet-class>com.yuanwill.response.ResponseTest4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseTest4</servlet-name>
+    <url-pattern>/ResponseTest4</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ResponseTest5</display-name>
+    <servlet-name>ResponseTest5</servlet-name>
+    <servlet-class>com.yuanwill.response.ResponseTest5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseTest5</servlet-name>
+    <url-pattern>/ResponseTest5</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>downloadServlet</display-name>
+    <servlet-name>downloadServlet</servlet-name>
+    <servlet-class>com.yuanwill.response.downloadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>downloadServlet</servlet-name>
+    <url-pattern>/downloadServlet</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -16,7 +16,8 @@ public class RequestTest4 extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.getWriter().write("requestTest4");
+		Object attrName = request.getAttribute("name");
+		response.getWriter().write(attrName.toString());
 	}
 
 

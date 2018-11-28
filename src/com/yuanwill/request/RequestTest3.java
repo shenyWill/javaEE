@@ -20,6 +20,7 @@ public class RequestTest3 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// request ×ª·¢
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/RequestTest4");
+		request.setAttribute("name", "tom");
 		dispatcher.forward(request, response);
 	}
 

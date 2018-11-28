@@ -156,4 +156,14 @@
     <servlet-name>downloadServlet</servlet-name>
     <url-pattern>/downloadServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>requestTest1</display-name>
+    <servlet-name>requestTest1</servlet-name>
+    <servlet-class>com.yuanwill.request.requestTest1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>requestTest1</servlet-name>
+    <url-pattern>/requestTest1</url-pattern>
+  </servlet-mapping>
 </web-app>

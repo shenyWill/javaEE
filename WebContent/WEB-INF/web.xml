@@ -166,4 +166,44 @@
     <servlet-name>requestTest1</servlet-name>
     <url-pattern>/requestTest1</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequsetTest2</display-name>
+    <servlet-name>RequsetTest2</servlet-name>
+    <servlet-class>com.yuanwill.request.RequsetTest2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequsetTest2</servlet-name>
+    <url-pattern>/RequsetTest2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestTest3</display-name>
+    <servlet-name>RequestTest3</servlet-name>
+    <servlet-class>com.yuanwill.request.RequestTest3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestTest3</servlet-name>
+    <url-pattern>/RequestTest3</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RequestTest4</display-name>
+    <servlet-name>RequestTest4</servlet-name>
+    <servlet-class>com.yuanwill.request.RequestTest4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RequestTest4</servlet-name>
+    <url-pattern>/RequestTest4</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReuqestTest5</display-name>
+    <servlet-name>ReuqestTest5</servlet-name>
+    <servlet-class>com.yuanwill.request.ReuqestTest5</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReuqestTest5</servlet-name>
+    <url-pattern>/ReuqestTest5</url-pattern>
+  </servlet-mapping>
 </web-app>

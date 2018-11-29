@@ -1,6 +1,7 @@
 package com.yuanwill.register;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.util.Map;
@@ -34,6 +35,9 @@ public class RegisterServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		// 设置request编码--只适合post提交
+		request.setCharacterEncoding("UTF-8");
 		// 获取数据
 		Map<String, String[]> properties = request.getParameterMap();
 		// 将散装数据存储到javabean中
@@ -69,10 +73,10 @@ public class RegisterServlet extends HttpServlet {
 		doGet(request, response);
 	}
 	
-	public void register(User user) throws SQLException{
+	public void register(User user) throws SQLException, UnsupportedEncodingException{
 		QueryRunner qr = new QueryRunner(JDBCUtils.getDataSource());
 		String sql = "insert into user values (?,?,?,?,?,?,?,?,?,?)";
-		qr.update(sql, user.getUid(),user.getUsername(),user.getPassword(),user.getName(),
+		qr.update(sql, user.getUid(),user.getUsername(),user.getPassword(),new String(user.getName().getBytes("iso-8859-1"), "utf-8"),
 				user.getEmail(),user.getTelephone(),user.getBirthday(),user.getSex(),user.getState(),user.getCode());
 	}
 

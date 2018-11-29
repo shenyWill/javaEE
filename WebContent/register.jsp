@@ -74,7 +74,7 @@ font {
 					<div class="form-group">
 						<label for="usercaption" class="col-sm-2 control-label">姓名</label>
 						<div class="col-sm-6">
-							<input type="text" class="form-control" id="usercaption" name="usercaption"
+							<input type="text" class="form-control" id="usercaption" name="name"
 								placeholder="请输入姓名">
 						</div>
 					</div>

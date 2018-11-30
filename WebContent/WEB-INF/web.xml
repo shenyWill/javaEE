@@ -246,4 +246,24 @@
     <servlet-name>CookieTest3</servlet-name>
     <url-pattern>/CookieTest3</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SessionTest1</display-name>
+    <servlet-name>SessionTest1</servlet-name>
+    <servlet-class>com.yuanwill.session.SessionTest1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionTest1</servlet-name>
+    <url-pattern>/SessionTest1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SessionTest2</display-name>
+    <servlet-name>SessionTest2</servlet-name>
+    <servlet-class>com.yuanwill.session.SessionTest2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SessionTest2</servlet-name>
+    <url-pattern>/SessionTest2</url-pattern>
+  </servlet-mapping>
 </web-app>

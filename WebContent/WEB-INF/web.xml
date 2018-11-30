@@ -216,4 +216,24 @@
     <servlet-name>RegisterServlet</servlet-name>
     <url-pattern>/registerServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CookieTest1</display-name>
+    <servlet-name>CookieTest1</servlet-name>
+    <servlet-class>com.yuanwill.cookie.CookieTest1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieTest1</servlet-name>
+    <url-pattern>/CookieTest1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CookieTest2</display-name>
+    <servlet-name>CookieTest2</servlet-name>
+    <servlet-class>com.yuanwill.cookie.CookieTest2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieTest2</servlet-name>
+    <url-pattern>/CookieTest2</url-pattern>
+  </servlet-mapping>
 </web-app>

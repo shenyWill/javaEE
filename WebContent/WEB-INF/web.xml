@@ -236,4 +236,14 @@
     <servlet-name>CookieTest2</servlet-name>
     <url-pattern>/CookieTest2</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CookieTest3</display-name>
+    <servlet-name>CookieTest3</servlet-name>
+    <servlet-class>com.yuanwill.cookie.CookieTest3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieTest3</servlet-name>
+    <url-pattern>/CookieTest3</url-pattern>
+  </servlet-mapping>
 </web-app>

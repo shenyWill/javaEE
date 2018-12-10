@@ -8,10 +8,17 @@
   	<location>/error.jsp</location>
   </error-page>
   
+  <!-- 配置初始化参数 -->
   <context-param>
     <param-name>name</param-name>
     <param-value>shenyuan</param-value>
   </context-param>
+  
+  <context-param>
+  	<param-name>username</param-name>
+  	<param-value>shenyuanhahaha</param-value>
+  </context-param>
+  
   <servlet>
     <servlet-name>MyFirstServlet</servlet-name>
     <servlet-class>com.yuanwill.servlet.MyFirstServlet</servlet-class>

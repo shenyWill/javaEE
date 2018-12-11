@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>TestPro</display-name>
-  
-  <!-- 配置错误页面 -->
   <error-page>
-  	<error-code>404</error-code>
-  	<location>/error.jsp</location>
+    <error-code>404</error-code>
+    <location>/error.jsp</location>
   </error-page>
-  
-  <!-- 配置初始化参数 -->
   <context-param>
     <param-name>name</param-name>
     <param-value>shenyuan</param-value>
   </context-param>
-  
   <context-param>
-  	<param-name>username</param-name>
-  	<param-value>shenyuanhahaha</param-value>
+    <param-name>username</param-name>
+    <param-value>shenyuanhahaha</param-value>
   </context-param>
-  
   <servlet>
     <servlet-name>MyFirstServlet</servlet-name>
     <servlet-class>com.yuanwill.servlet.MyFirstServlet</servlet-class>
@@ -280,6 +274,14 @@
     <servlet-name>SessionTest2</servlet-name>
     <url-pattern>/SessionTest2</url-pattern>
   </servlet-mapping>
-  
-  
+  <servlet>
+    <description></description>
+    <display-name>TransferServlet</display-name>
+    <servlet-name>TransferServlet</servlet-name>
+    <servlet-class>www.yuanwill.transfer.TransferServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TransferServlet</servlet-name>
+    <url-pattern>/transferServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

@@ -284,4 +284,34 @@
     <servlet-name>TransferServlet</servlet-name>
     <url-pattern>/transferServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AjaxServlet</display-name>
+    <servlet-name>AjaxServlet</servlet-name>
+    <servlet-class>com.yuanwill.ajax.AjaxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServlet</servlet-name>
+    <url-pattern>/ajaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AjaxServletTwo</display-name>
+    <servlet-name>AjaxServletTwo</servlet-name>
+    <servlet-class>com.yuanwill.ajax.AjaxServletTwo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServletTwo</servlet-name>
+    <url-pattern>/ajaxServletTwo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AjaxServletThree</display-name>
+    <servlet-name>AjaxServletThree</servlet-name>
+    <servlet-class>com.yuanwill.ajax.AjaxServletThree</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxServletThree</servlet-name>
+    <url-pattern>/ajaxServletThree</url-pattern>
+  </servlet-mapping>
 </web-app>

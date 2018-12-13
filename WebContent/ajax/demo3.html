@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript" src="./../js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	function fn1() {
+		$.post(
+			'/TestPro/ajaxServletThree',
+			{name: '哈哈哈', age: 16},
+			function(data) {
+				console.log(data.name + "..." + data.age)
+			},
+			'json'
+		);
+	}
+	
+	function fn2() {
+		$.ajax({
+			url: '/TestPro/ajaxServletThree',
+			type: 'POST',
+			dataType: 'json',
+			data: {name: '我是json格式', age: 25},
+			success: function(data){
+				console.log(data.name + "!!!" + data.age)
+			},
+			error: function(){
+				
+			}
+		})
+	}
+</script>
+</head>
+<body>
+<input type="button" value="ajax访问" onclick="fn1()">
+<input type="button" value="ajax访问" onclick="fn2()">
+</body>
+</html>

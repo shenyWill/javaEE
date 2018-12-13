@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	 function fn1(){
+		 // 创建ajax引擎对象
+		 var xmlHttp = new XMLHttpRequest();
+		 
+		 // 绑定监听--监听服务器是否已经返回数据
+		 xmlHttp.onreadystatechange = function() {
+			 if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
+				 var res = xmlHttp.responseText;
+					console.log(res);
+			 }
+		}
+		 // 绑定地址
+		 xmlHttp.open("POST", "/TestPro/ajaxServletTwo", true);
+		 
+		 xmlHttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+		 // 发送请求
+		 xmlHttp.send("name=yuanwill");
+	 }
+</script>
+<body>
+<input type="button" value="ajax访问" onclick="fn1()">
+
+</body>
+</html>
